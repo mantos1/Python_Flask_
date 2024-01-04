@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="top">
+        <a class="top_a" href="/main/">Главная</a>
+        <a class="top_a" href="/clothes/">Одежда</a>
+        <a class="top_a" href="/shoes/">Обувь</a>
+        <a class="top_a" href="/jacket/">Куртки</a>
+    </div>
+
+    <div>
+        {% block content %}
+            Контент
+        {% endblock %}
+    </div>
+
+    <div class="basement">
+        <p>Copyright © 2024 BlaBlaBla Co., Ltd. All Rights Reserved.
+        <div class="basement_link">
+            <ul>
+                <li><a class="link_facebook" href="www.test.ru"></a>Facebook</li>
+                <li><a class="link_twitter" href="www.test.ru"></a>Twitter</li>
+                <li><a class="link_linkedin" href="www.test.ru"></a>Linkedin</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
