@@ -1,0 +1,14 @@
+@font-face {
+	font-family: 'MainFont';
+	src: local('MainFont'),
+		url(/static/font/main_font.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
