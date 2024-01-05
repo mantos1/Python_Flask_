@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+    <section class="section" id="clothes">
+        <div class="container">
+            <h2>Новое</h2>
+            <span>Без одежды никуда...</span>
+        </div>
+        <div class="container_clothes">
+            <div class="item">
+                <div class="item1_img">
+                    <img src="/static/img/men-01.jpg" alt="">
+                </div>
+                <div class="down-content">
+                    <h4>Вещь 1</h4>
+                    <span>14000.00 &#8381;</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item2_img">
+                    <img src="/static/img/men-02.jpg" alt="">
+                </div>
+                <div class="down-content">
+                    <h4>Вещь 2</h4>
+                    <span>10000.00 &#8381;</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item3_img">
+                    <img src="/static/img/men-03.jpg" alt="">
+                </div>
+                <div class="down-content">
+                    <h4>Вещь 3</h4>
+                    <span>7000.00 &#8381;</span>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
