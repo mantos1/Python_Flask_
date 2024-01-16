@@ -17,8 +17,8 @@ def hello():
         response.set_cookie('username', context['username'])
         response.set_cookie('email', context['email'])
         return response
-    else:
-        return redirect(url_for('submit_form'))
+
+    return redirect(url_for('submit_form'))
 
 @app.route('/submit_form/', methods = ['GET', 'POST'])
 def submit_form():
