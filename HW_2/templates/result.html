@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{title}}
+{% endblock %}
+
+{% block content %}
+<p>Добро пожаловать, ваш логин: {{username}} </br>
+  Ваша почта: {{email}} </br>
+</p>
+
+<form method="post" action="/submit_form/">
+    <button type="logout" name="logout" value="back">Выйти</button>
+</form>
+{% endblock %}
