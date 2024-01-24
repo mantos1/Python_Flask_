@@ -78,7 +78,7 @@ def thread_method():
 def multiprocess_method():
     processes = []
     for url in urls_list:
-        process = threading.Thread(target=download, args=[url.url, url.file_name_str])
+        process = Process(target=download, args=[url.url, url.file_name_str])
         processes.append(process)
         process.start()
 
